@@ -3,7 +3,15 @@
     "version": "1.0.0",
     "description": "A simple, lightweight, and efficient JavaScript library to manage encoding/decoding between base64 data, Uint8Arrays, and ArrayBuffers",
     "keywords": [
-        "base64, uint8array, arraybuffer, typedarray, urlBase64ToUint8Array, vapid, web push, push, push notifications"
+        "base64",
+        "uint8array",
+        "arraybuffer",
+        "typedarray",
+        "urlBase64ToUint8Array",
+        "vapid",
+        "web push",
+        "push",
+        "push notifications"
     ],
     "homepage": "https://github.com/PropreCity/base64-u8array-arraybuffer#readme",
     "bugs": {
