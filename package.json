@@ -1,6 +1,6 @@
 {
     "name": "base64-u8array-arraybuffer",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A simple, lightweight, and efficient JavaScript library to manage encoding/decoding between base64 data, Uint8Arrays, and ArrayBuffers",
     "keywords": [
         "base64",
