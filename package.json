@@ -1,0 +1,40 @@
+{
+    "name": "base64-u8-arraybuffer",
+    "version": "1.0.0",
+    "description": "A simple, lightweight, and efficient JavaScript library to manage encoding/decoding between base64 data, Uint8Arrays, and ArrayBuffers",
+    "keywords": [
+        "base64, uint8array, arraybuffer, typedarray, urlBase64ToUint8Array, vapid, web push, push, push notifications"
+    ],
+    "homepage": "https://github.com/PropreCity/base64-u8-arraybuffer#readme",
+    "bugs": {
+        "url": "https://github.com/PropreCity/base64-u8-arraybuffer/issues"
+    },
+    "license": "MIT",
+    "author": "-Propre <adou.alais@gmail.com>",
+    "files": [
+        "dist",
+        "src/*.js"
+    ],
+    "main": "dist/base64-u8-arraybuffer.min.js",
+    "browser": "dist/base64-u8-arraybuffer.min.js",
+    "module": "dist/base64-u8-arraybuffer.esm.js",
+    "repository": "github:PropreCity/base64-u8-arraybuffer",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.1",
+        "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+        "@babel/preset-env": "^7.11.0",
+        "@rollup/plugin-babel": "^5.1.0",
+        "@rollup/plugin-node-resolve": "^8.4.0",
+        "rollup": "^2.23.0",
+        "rollup-plugin-terser": "^6.1.0"
+    },
+    "dependencies": {},
+    "engines": {
+        "node": ">=10.0.0"
+    }
+}

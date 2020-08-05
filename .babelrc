@@ -1,0 +1,13 @@
+{
+    "ignore": [
+        "node_modules/**"
+    ],
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "modules": false
+            }
+        ]
+    ]
+}
