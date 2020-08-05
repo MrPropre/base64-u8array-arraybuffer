@@ -1,6 +1,6 @@
 # base64 <-> Uint8Array <-> ArrayBuffer
-[![Build Status](https://travis-ci.org/PropreCity/base64-u8-arraybuffer.svg)](https://travis-ci.org/PropreCity/base64-u8-arraybuffer)
-[![npm version](https://badge.fury.io/js/base64-u8-arraybuffer.svg)](https://www.npmjs.com/package/base64-u8-arraybuffer)
+[![Build Status](https://travis-ci.org/PropreCity/base64-u8array-arraybuffer.svg)](https://travis-ci.org/PropreCity/base64-u8array-arraybuffer)
+[![npm version](https://badge.fury.io/js/base64-u8array-arraybuffer.svg)](https://www.npmjs.com/package/base64-u8array-arraybuffer)
 
 📦 A simple, lightweight, and efficient JavaScript library to manage encoding and decoding between base64 data, Uint8Arrays, and ArrayBuffers. This library perfectly works with Node.js and the browser.
 
@@ -15,9 +15,9 @@
 
 ### CDN
 
-The easiest way to use base64-u8-arraybuffer is to include the library from a CDN:
+The easiest way to use base64-u8array-arraybuffer is to include the library from a CDN:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/base64-u8-arraybuffer@1.0.0/dist/base64-u8-arraybuffer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/base64-u8array-arraybuffer@1.0.0/dist/base64-u8array-arraybuffer.min.js"></script>
 ```
 
 Then, in your JavaScript code:
@@ -30,15 +30,15 @@ const u8 = base64ToUint8Array('base64 string here')
 
 ### Local
 
-You can also install base64-u8-arraybuffer in your project.
+You can also install base64-u8array-arraybuffer in your project.
 
 ```bash
-npm i base64-u8-arraybuffer
+npm i base64-u8array-arraybuffer
 ```
 
 And then, you can import the library as ES Module:
 ```js
-import { base64ToArrayBuffer } from 'base64-u8-arraybuffer'
+import { base64ToArrayBuffer } from 'base64-u8array-arraybuffer'
 
 const u8 = base64ToUint8Array('base64 string here')
 ```

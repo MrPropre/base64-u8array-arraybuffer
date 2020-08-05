@@ -4,7 +4,7 @@ import { terser } from 'rollup-plugin-terser'
 import babel from '@rollup/plugin-babel'
 
 const name = 'base64u8ArrayBuffer'
-const banner = `/*! base64-u8-arraybuffer v${version} | ${license} */`
+const banner = `/*! base64-u8array-arraybuffer v${version} | ${license} */`
 
 const babelOptions = {
   babelHelpers: 'bundled',
@@ -16,13 +16,13 @@ export default [
     input: 'src/index.js',
     output: [
       {
-        file: 'dist/base64-u8-arraybuffer.js',
+        file: 'dist/base64-u8array-arraybuffer.js',
         name,
         format: 'umd',
         banner
       },
       {
-        file: 'dist/base64-u8-arraybuffer.min.js',
+        file: 'dist/base64-u8array-arraybuffer.min.js',
         name,
         format: 'umd',
         banner,
@@ -31,12 +31,12 @@ export default [
         ]
       },
       {
-        file: 'dist/base64-u8-arraybuffer.amd.js',
+        file: 'dist/base64-u8array-arraybuffer.amd.js',
         format: 'amd',
         banner
       },
       {
-        file: 'dist/base64-u8-arraybuffer.amd.min.js',
+        file: 'dist/base64-u8array-arraybuffer.amd.min.js',
         format: 'amd',
         banner,
         plugins: [
@@ -44,13 +44,13 @@ export default [
         ]
       },
       {
-        file: 'dist/base64-u8-arraybuffer.iife.js',
+        file: 'dist/base64-u8array-arraybuffer.iife.js',
         name,
         format: 'iife',
         banner
       },
       {
-        file: 'dist/base64-u8-arraybuffer.iife.min.js',
+        file: 'dist/base64-u8array-arraybuffer.iife.min.js',
         name,
         format: 'iife',
         banner,
@@ -68,12 +68,12 @@ export default [
     input: 'src/index.js',
     output: [
       {
-        file: 'dist/base64-u8-arraybuffer.esm.js',
+        file: 'dist/base64-u8array-arraybuffer.esm.js',
         format: 'es',
         banner
       },
       {
-        file: 'dist/base64-u8-arraybuffer.esm.min.js',
+        file: 'dist/base64-u8array-arraybuffer.esm.min.js',
         format: 'es',
         banner,
         plugins: [

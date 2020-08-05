@@ -1,13 +1,13 @@
 {
-    "name": "base64-u8-arraybuffer",
+    "name": "base64-u8array-arraybuffer",
     "version": "1.0.0",
     "description": "A simple, lightweight, and efficient JavaScript library to manage encoding/decoding between base64 data, Uint8Arrays, and ArrayBuffers",
     "keywords": [
         "base64, uint8array, arraybuffer, typedarray, urlBase64ToUint8Array, vapid, web push, push, push notifications"
     ],
-    "homepage": "https://github.com/PropreCity/base64-u8-arraybuffer#readme",
+    "homepage": "https://github.com/PropreCity/base64-u8array-arraybuffer#readme",
     "bugs": {
-        "url": "https://github.com/PropreCity/base64-u8-arraybuffer/issues"
+        "url": "https://github.com/PropreCity/base64-u8array-arraybuffer/issues"
     },
     "license": "MIT",
     "author": "-Propre <adou.alais@gmail.com>",
@@ -15,10 +15,10 @@
         "dist",
         "src/*.js"
     ],
-    "main": "dist/base64-u8-arraybuffer.min.js",
-    "browser": "dist/base64-u8-arraybuffer.min.js",
-    "module": "dist/base64-u8-arraybuffer.esm.js",
-    "repository": "github:PropreCity/base64-u8-arraybuffer",
+    "main": "dist/base64-u8array-arraybuffer.min.js",
+    "browser": "dist/base64-u8array-arraybuffer.min.js",
+    "module": "dist/base64-u8array-arraybuffer.esm.js",
+    "repository": "github:PropreCity/base64-u8array-arraybuffer",
     "scripts": {
         "build": "rollup -c",
         "dev": "rollup -c --watch",
