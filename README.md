@@ -25,7 +25,7 @@ Then, in your JavaScript code:
 // Unpacking needed functions from the global object
 const { base64ToArrayBuffer } = base64u8ArrayBuffer
 
-const u8 = base64ToUint8Array('base64 string here')
+const buffer = base64ToArrayBuffer('base64 string here')
 ```
 
 ### Local
@@ -40,7 +40,7 @@ And then, you can import the library as ES Module:
 ```js
 import { base64ToArrayBuffer } from 'base64-u8array-arraybuffer'
 
-const u8 = base64ToUint8Array('base64 string here')
+const buffer = base64ToArrayBuffer('base64 string here')
 ```
 You can also use commonJS syntax with `require()`
 
