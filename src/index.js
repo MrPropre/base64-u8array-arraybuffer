@@ -1,21 +1,20 @@
 const runningOnBrowser = typeof window !== 'undefined'
 
-// Pad out with standard base64 required padding characters if missing
-const base64AddPadding = base64String => {
-  const missingPadding = '='.repeat((4 - base64String.length % 4) % 4)
-  return base64String + missingPadding
-}
-
-// Replace non-url compatible chars with base64 standard chars
-const base64UrlDecode = base64UrlString => {
-  return base64UrlString
+const base64urlToBase64 = base64UrlString => {
+  // Replace non-url compatible chars with base64 standard chars
+  const base64 = base64UrlString
     .replace(/-/g, '+')
     .replace(/_/g, '/')
+
+  // Pad out with standard base64 required padding characters if missing
+  const missingPadding = '='.repeat((4 - base64.length % 4) % 4)
+
+  return base64 + missingPadding
 }
 
-const atob = data => {
+const base64Decode = data => {
   if (runningOnBrowser) {
-    return window.atob(data)
+    return atob(data)
   }
   // atob polyfill for Node
   return Buffer.from(data, 'base64').toString('binary')
@@ -23,10 +22,10 @@ const atob = data => {
 
 const base64ToUint8Array = base64String => {
   // base64 sanitizing
-  const base64 = base64UrlDecode(base64AddPadding(base64String))
+  const base64 = base64urlToBase64(base64String)
 
   // base64 decoding
-  const rawData = atob(base64)
+  const rawData = base64Decode(base64)
 
   // Converting raw data to Uint8Array
   return Uint8Array.from(rawData, char => char.charCodeAt(0))
