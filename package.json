@@ -31,7 +31,8 @@
         "build": "rollup -c",
         "dev": "rollup -c --watch",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "coveralls": "cat ./coverage/lcov.info | coveralls"
+        "coverage": "jest --coverage --passWithNoTests",
+        "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls"
     },
     "devDependencies": {
         "@babel/core": "^7.11.1",
@@ -45,6 +46,7 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-promise": "^4.2.1",
         "eslint-plugin-standard": "^4.0.1",
+        "jest": "^26.2.2",
         "rollup": "^2.23.0",
         "rollup-plugin-eslint": "^7.0.0",
         "rollup-plugin-terser": "^6.1.0"
