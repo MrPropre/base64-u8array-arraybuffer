@@ -40,7 +40,10 @@ const base64ToUint8Array = base64String => {
 }
 
 const typedArrayToBase64 = typedArray => {
-  return base64Encode(String.fromCharCode(...typedArray))
+  const string = typedArray.reduce((data, byte) => {
+    return data + String.fromCharCode(byte)
+  }, '')
+  return base64Encode(string)
 }
 
 const uint8ArrayToBase64 = typedArrayToBase64

@@ -8,6 +8,7 @@
 - No dependency
 - Accepts base64url and replace non-url compatible chars with base64 standard chars
 - Adds missing padding to base64 string
+- Works even on large data
 - Uses modern functions and shorter solutions
 - Supports ES modules, AMD, CommonJS and IIFE
 
@@ -78,13 +79,6 @@ async function subscribeUserToPush(registration) {
   // ...
 }
 ```
-
-## Known issues
-
-```txt
-RangeError: Maximum call stack size exceeded
-```
-This error occurs when using too large data (more than 30 kb) to encode a base64 string (e.g. `uint8ArrayToBase64()` and `arrayBufferToBase64()`).
 
 ## Tests
 
