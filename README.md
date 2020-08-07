@@ -7,7 +7,7 @@
 - **< 900 bytes** gzipped!
 - No dependency
 - Accepts base64url and replace non-url compatible chars with base64 standard chars
-- Add missing padding to base64 string
+- Adds missing padding to base64 string
 - Uses modern functions and shorter solutions
 - Supports ES modules, AMD, CommonJS and IIFE
 
@@ -44,7 +44,7 @@ const buffer = base64ToArrayBuffer('base64 string here')
 ```
 You can also use commonJS syntax with `require()`
 
-Note ES Module syntax also works in modern browsers, you just need to add `type="module"` to your `<script>` tag.
+Note ES Module syntax also works in modern browsers. You just need to add `type="module"` to your `<script>` tag.
 ```html
 <script type="module" src="..."></script>
 ```
@@ -54,15 +54,15 @@ Note ES Module syntax also works in modern browsers, you just need to add `type=
 | Function name | Description |
 | --- | --- |
 | `base64ToUint8Array(base64String)` | base64 to Uint8Array |
-| `uint8ArrayToBase64(uint8Array)` | Uint8Array to Base64 (works with any TypedArray, you can use `typedArrayToBase64()` alias) |
-| `uint8ArrayToArrayBuffer(uint8Array)` | Uint8Array to ArrayBuffer (works with any TypedArray, you can use `typedArrayToArrayBuffer()` alias) |
+| `uint8ArrayToBase64(uint8Array)` | Uint8Array to Base64 (Works with any TypedArray. You can use `typedArrayToBase64()` alias.) |
+| `uint8ArrayToArrayBuffer(uint8Array)` | Uint8Array to ArrayBuffer (Works with any TypedArray. You can use `typedArrayToArrayBuffer()` alias.) |
 | `arrayBufferToUint8Array(arrayBuffer)` | ArrayBuffer to Uint8Array |
 | `base64ToArrayBuffer(base64String)` | base64 to ArrayBuffer |
 | `arrayBufferToBase64(arrayBuffer)` | ArrayBuffer to base64 |
 
 ## Useful case
 
-An example for this library would be to convert a base64url VAPID application server key into an Uint8Array to suscribe to Web Push Notifications. You can achieve this by using `base64ToUint8Array(base64String)` function.
+An example for this library would be to convert a base64url VAPID application server key into an Uint8Array to subscribe to Web Push Notifications. You can achieve this by using `base64ToUint8Array(base64String)` function.
 
 ```js
 const { base64ToUint8Array } = base64u8ArrayBuffer
@@ -84,8 +84,8 @@ async function subscribeUserToPush(registration) {
 ```txt
 RangeError: Maximum call stack size exceeded
 ```
-This error occurs when using too large data (more than 30kb) to encode a base64 string (e.g, `uint8ArrayToBase64()` and `arrayBufferToBase64()`).
+This error occurs when using too large data (more than 30 kb) to encode a base64 string (e.g. `uint8ArrayToBase64()` and `arrayBufferToBase64()`).
 
 ## Tests
 
-There is no tests for the moment.
+There are no tests for the moment.
