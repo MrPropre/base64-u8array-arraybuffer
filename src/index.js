@@ -20,6 +20,14 @@ const base64Decode = data => {
   return Buffer.from(data, 'base64').toString('binary')
 }
 
+const base64Encode = data => {
+  if (runningOnBrowser) {
+    return btoa(data)
+  }
+  // btoa polyfill for Node
+  return Buffer.from(data).toString('base64')
+}
+
 const base64ToUint8Array = base64String => {
   // base64 sanitizing
   const base64 = base64urlToBase64(base64String)
@@ -32,10 +40,7 @@ const base64ToUint8Array = base64String => {
 }
 
 const typedArrayToBase64 = typedArray => {
-  if (runningOnBrowser) {
-    return btoa(String.fromCharCode(...typedArray))
-  }
-  return Buffer.from(typedArray).toString('base64')
+  return base64Encode(String.fromCharCode(...typedArray))
 }
 
 const uint8ArrayToBase64 = typedArrayToBase64
