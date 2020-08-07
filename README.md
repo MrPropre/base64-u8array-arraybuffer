@@ -1,6 +1,7 @@
 # base64 <-> Uint8Array <-> ArrayBuffer
 [![Build Status](https://travis-ci.org/PropreCity/base64-u8array-arraybuffer.svg)](https://travis-ci.org/PropreCity/base64-u8array-arraybuffer)
 [![npm version](https://badge.fury.io/js/base64-u8array-arraybuffer.svg)](https://www.npmjs.com/package/base64-u8array-arraybuffer)
+[![Coverage Status](https://coveralls.io/repos/github/PropreCity/base64-u8array-arraybuffer/badge.svg?branch=master)](https://coveralls.io/github/PropreCity/base64-u8array-arraybuffer?branch=master)
 
 📦 A simple, lightweight, and efficient JavaScript library to manage encoding and decoding between base64 data, Uint8Arrays, and ArrayBuffers. This library perfectly works with Node.js and the browser.
 

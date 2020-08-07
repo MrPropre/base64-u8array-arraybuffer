@@ -30,13 +30,15 @@
     "scripts": {
         "build": "rollup -c",
         "dev": "rollup -c --watch",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "coveralls": "cat ./coverage/lcov.info | coveralls"
     },
     "devDependencies": {
         "@babel/core": "^7.11.1",
         "@babel/preset-env": "^7.11.0",
         "@rollup/plugin-babel": "^5.1.0",
         "@rollup/plugin-node-resolve": "^8.4.0",
+        "coveralls": "^3.1.0",
         "eslint": "^7.6.0",
         "eslint-config-standard": "^14.1.1",
         "eslint-plugin-import": "^2.22.0",
