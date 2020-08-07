@@ -84,3 +84,7 @@ async function subscribeUserToPush(registration) {
 ## Tests
 
 There are no tests for the moment.
+
+## License
+
+MIT License.
