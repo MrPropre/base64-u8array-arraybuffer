@@ -19,7 +19,7 @@
 
 The easiest way to use base64-u8array-arraybuffer is to include the library from a CDN:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/base64-u8array-arraybuffer@1.0.3/dist/base64-u8array-arraybuffer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/base64-u8array-arraybuffer@1.0.2/dist/base64-u8array-arraybuffer.min.js"></script>
 ```
 
 Then, in your JavaScript code:
