@@ -1,8 +1,8 @@
 import { version, license } from './package.json'
-import resolve from '@rollup/plugin-node-resolve'
+import { nodeResolve } from '@rollup/plugin-node-resolve'
 import { terser } from 'rollup-plugin-terser'
-import babel from '@rollup/plugin-babel'
-import { eslint } from 'rollup-plugin-eslint'
+import { babel } from '@rollup/plugin-babel'
+import eslint from '@rollup/plugin-eslint'
 
 const name = 'base64u8ArrayBuffer'
 const banner = `/*! base64-u8array-arraybuffer v${version} | ${license} */`
@@ -61,7 +61,7 @@ export default [
       }
     ],
     plugins: [
-      resolve(),
+      nodeResolve(),
       eslint(),
       babel(babelOptions)
     ]
